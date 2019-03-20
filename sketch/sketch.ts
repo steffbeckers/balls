@@ -24,7 +24,7 @@ var sketch = (p: p5) => {
 
     // White
     p.fill(255)
-    p.ellipse(200, 700, 200, 200);
+    p.ellipse(500, 700, 200, 200);
 
     // White (Ghost)
     p.fill(255, 100)
@@ -32,9 +32,12 @@ var sketch = (p: p5) => {
 
     // Lines
     p.stroke(0);
-    p.line(200, 700, 500, 200);
-    p.line(200, 700, 720, 100);
-    p.line(200, 700, p.mouseX, p.mouseY);
+    p.line(500, 1000, 500, 0);
+    p.line(0, 200, 1000, 200);
+    p.line(500, 700, 642, 0);
+    p.line(500, 700, 571, 0);
+    // p.line(700, 200, 700, 400);
+    p.line(500, 700, p.mouseX, p.mouseY);
     p.line(500, 200, p.mouseX, p.mouseY);
   }
 }
